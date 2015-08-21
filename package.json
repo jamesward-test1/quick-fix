@@ -1,5 +1,5 @@
 {
-  "name": "quickfix",
+  "name": "quick-fix",
   "version": "1.0.0",
   "description": "FIX eCommerce home page optimized for deployment workflow demos",
   "main": "index.js",
