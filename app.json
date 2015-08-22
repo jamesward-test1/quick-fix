@@ -1,0 +1,12 @@
+{
+  "name": "Quick FIX",
+  "description": "Static home page of FIX eCommerce storefront",
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "website": "https://heroku.github.io/fix",
+  "repository": "https://github.com/heroku/quick-fix.git",
+  "env": {},
+  "addons": []
+}
