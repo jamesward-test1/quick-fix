@@ -1,8 +1,160 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
+}
+
+header {
+  color: white;
+  text-transform: uppercase;
+
+  height: 200px;
+  padding: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center left 58%;
+  background-image: url(images/071715_Heroku_9883-.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header .logo {
+  width: 86px;
+}
+header .logo-text {
+  font-size: 8px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+@media (min-width: 500px) {
+  header {
+    height: 300px;
+    padding: 50px 20px;
+  }
+  header .logo {
+    width: 100px;
+  }
+  header .logo-text {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    height: 500px;
+    padding: 100px 20px 50px 20px;
+  }
+  header .logo {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  header .logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 6.5px;
+  }
+}
+@media (min-width: 1200px) and (min-aspect-ratio: 1/1) {
+  header {
+    height: 800px;
+    padding: 200px 20px 100px 20px;
+  }
+  header .logo {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  header .logo-text {
+    font-size: 18px;
+    letter-spacing: 11px;
+  }
+}
+
+.masthead-elements-row-1,
+.masthead-elements-row-2 {
+  height: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.masthead-elements-row-2 {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.masthead-elements-row-1 > div,
+.masthead-elements-row-2 > div {
+  /* border: 1px dashed red; */
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.element-left {
+
+}
+.element-middle {
+  text-align: center;
+}
+.element-right {
+  text-align: right;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+a.btn {
+  text-decoration: none;
+}
+.btn + .btn {
+  margin-left: 10px;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn-trans {
+  color: #333;
+  background-color: rgba(255,255,255,0.4);
+  border-color: #fff;
 }
