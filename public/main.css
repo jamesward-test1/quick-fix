@@ -58,7 +58,7 @@ header .logo-text {
     letter-spacing: 6.5px;
   }
 }
-@media (min-width: 1200px) and (min-aspect-ratio: 1/1) {
+@media (min-width: 1200px) and (min-height: 1000px) {
   header {
     height: 800px;
     padding: 200px 20px 100px 20px;
