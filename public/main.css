@@ -369,8 +369,6 @@ footer a {
 .trailer-links {
   background-color: #222;
   padding: 30px 0 20px 0;
-  font-size: 0.7rem;
-  line-height: 1.5rem;
 
   -webkit-box-flex: 0 0 auto;
   -moz-box-flex: 0 0 auto;
@@ -395,8 +393,12 @@ footer a {
 .internal-links {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 .social-links {
+  font-size: 0.7rem;
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -406,20 +408,21 @@ footer a {
   flex-wrap: nowrap;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-align-content: stretch;
   align-content: stretch;
 }
 .social-links > * {
+  width: 100px;
   text-align: center;
   line-height: 1rem;
   margin: 0 10px;
-  -webkit-box-flex: 1 1 0;
-  -moz-box-flex: 1 1 0;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0;
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .social-logo {
   width: 48px;
