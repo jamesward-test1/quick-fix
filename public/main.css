@@ -8,11 +8,33 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
 }
 
+h1 {
+  color: #939393;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0;
+}
+@media (min-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-weight: 200;
+    font-size: 2.2rem;
+    letter-spacing: 0.6rem;
+  }
+}
+
 header {
   color: white;
-  text-transform: uppercase;
 
-  height: 200px;
+  height: 250px;
   padding: 20px 20px;
   background-repeat: no-repeat;
   background-position: center left 58%;
@@ -26,21 +48,24 @@ header .logo {
   width: 86px;
 }
 header .logo-text {
+  text-transform: uppercase;
   font-size: 8px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
 }
 @media (min-width: 500px) {
-  header {
-    height: 300px;
-    padding: 50px 20px;
-  }
   header .logo {
     width: 100px;
   }
   header .logo-text {
     font-size: 10px;
     letter-spacing: 2px;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) {
+  header {
+    height: 300px;
+    padding: 50px 20px;
   }
 }
 @media (min-width: 900px) {
@@ -112,6 +137,23 @@ header .logo-text {
   text-align: right;
 }
 
+section {
+}
+.textured-section {
+  background-color: rgb(161,109,59);
+  background-image: url(images/wood-grain.jpg);
+  background-position: left top;
+}
+.textured-section h1 {
+  font-weight: 600;
+  color: rgb(247,220,172);
+}
+@media (min-width: 500px) {
+  .textured-section h1 {
+    font-weight: 200;
+  }
+}
+
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
@@ -157,4 +199,69 @@ a.btn {
   color: #333;
   background-color: rgba(255,255,255,0.4);
   border-color: #fff;
+}
+.btn-hot {
+  color: #ff3300;
+  background-color: #fff;
+  border-color: #ff3300;
+}
+
+.products {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.products > * {
+  /* border: 1px dashed red; */
+  width: 250px;
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 4px 20px 4px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.product-image {
+  width: 100%;
+}
+.product-name {
+  font-weight: 300;
+  height: 2em;
+}
+.product-price {
+  font-weight: 300;
+  height: 1.5em;
+}
+.product-button {
+  font-weight: 300;
+}
+@media (min-width: 800px) {
+  .products > * {
+    width: 350px;
+  }
+}
+@media (min-width: 1100px) {
+  .products > * {
+    width: 250px;
+  }
+}
+@media (min-width: 1700px) {
+  .products > * {
+    width: 400px;
+  }
+  .products > li {
+  }
 }
