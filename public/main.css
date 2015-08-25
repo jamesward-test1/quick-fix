@@ -148,7 +148,7 @@ header .logo-text {
 }
 @media (min-width: 500px) {
   .textured-section h1 {
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 
@@ -438,8 +438,6 @@ footer a {
 }
 @media (min-width: 800px) {
   footer {
-    font-size: 1rem;
-
     -webkit-flex-direction: row;
     flex-direction: row;
   }
