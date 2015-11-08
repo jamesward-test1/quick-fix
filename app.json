@@ -7,7 +7,6 @@
   ],
   "website": "https://heroku.github.io/fix",
   "repository": "https://github.com/heroku/quick-fix.git",
-  "env": {},
   "addons": [],
   "image": "heroku/nodejs"
 }
