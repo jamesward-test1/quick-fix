@@ -6,7 +6,7 @@
     "javascript"
   ],
   "website": "https://heroku.github.io/fix",
-  "repository": "https://github.com/heroku/quick-fix.git",
+  "repository": "https://github.com/jamesward-test/quick-fix.git",
   "env": {},
   "addons": [],
   "image": "heroku/nodejs"
